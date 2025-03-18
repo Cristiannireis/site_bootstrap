@@ -1,0 +1,108 @@
+/* styles.css */
+
+/* Estilos gerais */
+html, body {
+    height: 100%; /* Garante que o corpo ocupe 100% da altura da tela */
+    margin: 0; /* Remove margens padrão */
+    display: flex; /* Usar flexbox para o layout */
+    flex-direction: column; /* Coloca os elementos em coluna */
+}
+
+/* Estilos personalizados para o carrossel */
+.carousel-item img {
+    max-height: 400px; /* Limita a altura das imagens do carrossel */
+    width: 100%; /* Garante que a imagem ocupe toda a largura */
+    object-fit: cover; /* Faz com que a imagem cubra o espaço disponível */
+}
+
+
+/* Estilo do cabeçalho */
+header {
+    padding: 2rem 0; /* Ajusta o padding do cabeçalho */
+    background-color: black;
+}
+
+.container {
+    flex: 1; /* Faz com que o conteúdo ocupe o espaço disponível */
+}
+
+/* Estilo do rodapé sem bootstrap */
+footer {
+    
+    
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    width: 100%; /* Garante que ocupe toda a largura */
+}
+header p {
+    font-size: 0.9rem; /* Reduz o tamanho da fonte do parágrafo em telas muito pequenas */
+}
+
+footer p {
+    font-size: 0.8rem; /* Reduz o tamanho da fonte do rodapé em telas muito pequenas */
+}
+footer {
+    padding: 0.5rem 0; /* Reduz o padding em telas menores */
+}
+
+.carousel-item img {
+    max-height: 300px; /* Reduz a altura máxima das imagens em telas menores */
+}
+/* Estilos para os cards */
+.card {
+    border: none; /* Remove a borda padrão do card */
+    border-radius: 0.5rem; /* Arredonda os cantos do card */
+    transition: transform 0.3s; /* Adiciona uma transição suave ao hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse */
+}
+
+.card-img-top {
+    border-top-left-radius: 0.5rem; /* Arredonda o canto superior esquerdo da imagem */
+    border-top-right-radius: 0.5rem; /* Arredonda o canto superior direito da imagem */
+}
+
+/* Estilos para o menu lateral */
+.list-group-item {
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa; /* Cor de fundo ao passar o mouse */
+}
+
+.collapse {
+    margin-left: 15px; /* Adiciona uma margem à esquerda para as seções colapsáveis */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem 0; /* Reduz o padding em telas menores */
+    }
+
+    footer {
+        padding: 0.5rem 0; /* Reduz o padding em telas menores */
+    }
+
+    .carousel-item img {
+        max-height: 300px; /* Reduz a altura máxima das imagens em telas menores */
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte do título em telas muito pequenas */
+    }
+
+    header p {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte do parágrafo em telas muito pequenas */
+    }
+
+    footer p {
+        font-size: 0.8rem; /* Reduz o tamanho da fonte do rodapé em telas muito pequenas */
+    }
+}
